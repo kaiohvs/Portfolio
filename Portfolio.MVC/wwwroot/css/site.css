@@ -1,0 +1,87 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    padding-top: 70px;
+}
+
+.table-responsive {
+    width: 100%;
+    max-width: 800px; /* Defina a largura máxima desejada */
+    margin: auto;
+    table-layout: fixed; /* Força as colunas a terem a mesma largura */
+    text-align: center;
+}
+
+.form-responsive {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.table th, .table td {
+    word-wrap: break-word; /* Quebra palavras longas */
+    white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
+    overflow: hidden; /* Esconde o texto que não cabe */
+    text-overflow: ellipsis; /* Adiciona reticências ao texto longo */
+}
+
+.table th, .table td, .table .btn {
+    padding: 0.5rem; /* Ajusta o preenchimento das células */
+}
+
+.new-posts {
+    text-align: center;
+}
+
+.botoes-direita {
+    text-align: right;
+}
+
+.custom-box {
+    background-color: #f0f0f0;    
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.responsive-table {
+    width: 100%;
+}
+
+.table-row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+    .table-row dt {
+        flex: 1;
+        font-weight: bold;
+    }
+
+    .table-row dd {
+        flex: 2;
+        margin-left: 0;
+    }
+
+
+
+

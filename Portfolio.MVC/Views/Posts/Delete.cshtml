@@ -1,0 +1,46 @@
+﻿@model Portfolio.MVC.Models.Post
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Deletar";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<div class="form-responsive">
+
+    <h1>Deletar</h1>
+
+    <h3>TEM CERTEZA DE QUE DESEJA DELETAR ISTO?</h3>
+    <div>
+        <h4>Postagem</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Content)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.CreatedAt)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger btn-sm" /> |
+            <a asp-action="Index" type="button" class="btn btn-primary btn-sm">Back to List</a>
+        </form>
+    </div>
+</div>
